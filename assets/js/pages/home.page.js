@@ -14,6 +14,7 @@ export default async function HomePage(app) {
   clearButton.addEventListener("click", () => {
     searchInput.value = "";
     clearButton.disabled = true;
+    recommendationList.innerHTML = "";
   });
 
   searchButton.addEventListener("click", onSearch);

@@ -159,7 +159,7 @@ export default class TravelApp extends HTMLElement {
                   element("button", {
                     id: "clear-button",
                     disabled: true,
-                    type: "reset",
+                    type: "button",
                     text: "Clear",
                   }),
                 ],
