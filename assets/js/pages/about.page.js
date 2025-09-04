@@ -21,7 +21,7 @@ class TeamMember extends HTMLElement {
   render() {
     this.innerHTML = `
       <div class="team-member">
-          <img src="/assets/images/${this.avatar}" alt="Team Member 1">
+          <img src="./assets/images/${this.avatar}" alt="Team Member 1">
           <h3>${this.name}</h3>
           <p>${this.role}</p>
 
