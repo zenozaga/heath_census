@@ -36,7 +36,7 @@ let cache = null;
 async function loader() {
   if (cache) return cache;
 
-  return fetch("../api/travel_recommendation_api.json")
+  return fetch("api/travel_recommendation_api.json")
     .then((res) => res.json())
     .then((data) => {
       cache = data;
