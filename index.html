@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMax - Home</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home-page">
+    <div class="background-overlay">
+        <img src="/assets/images/background.png" />
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <travel-app module="/assets/js/pages/home.page.js">
+        <section class="page-info" style="max-width: 500px;">
+            <h1 class="page-title">Your Next Adventure Awaits</h1>
+            <hr style="margin: 2em 0;" />
+            <p class="page-description">
+                Discover the best travel destinations tailored just for you! From breathtaking beaches and
+                vibrant cities
+                to hidden gems off the beaten path, find unique places that match your style and turn every trip
+                into
+                an unforgettable adventure.
+            </p>
+            <button class="button lg" style="margin-top: 2em;" id="explore-button">
+                Explore Now
+            </button>
+        </section>
+        <section class="recommendation-list grid grid-cols-2" id="recommendation-list">
+        </section>
+    </travel-app>
+
+    <script type="module">
+        import TravelApp from "/assets/js/app.js";
+        customElements.define("travel-app", TravelApp);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMax - About Us</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home-page">
+    <div class="background-overlay">
+        <img src="./assets/images/background.png" />
+        <div class="gradient-overlay" style="background-color: rgba(0, 0, 0, 0.651);"></div>
+    </div>
+
+    <travel-app module="/assets/js/pages/about.page.js" active-nav="about" hide-searchbar
+        container-class="container w-full flex flex-col justify-center item-center">
+        <section class="page-info" style="max-width: 100%; text-align: center;">
+            <h1 class="page-title">About Us</h1>
+            <hr style="margin: 2em 0;" />
+            <p class="page-description">
+                At <strong>TravelMax</strong>, we believe that traveling is more than reaching a destination —
+                it’s about <strong>living unforgettable experiences</strong> and <strong>discovering the world
+                    in your own way</strong>. As a <strong>full-service travel agency</strong>, we design
+                <strong>personalized journeys</strong> that reflect your style, whether you dream of
+                <strong>relaxing on pristine beaches</strong>, <strong>exploring vibrant cities</strong>, or
+                <strong>uncovering hidden gems</strong>. With the support of our dedicated team and trusted
+                partners worldwide, every trip is carefully planned to combine comfort, adventure, and
+                authenticity. With <strong>TravelMax</strong>, you can focus on what truly matters:
+                <strong>enjoying your adventure</strong> and creating memories that will last a lifetime.
+
+            </p>
+        </section>
+
+        <section class="page-info our-team w-full" style="margin-top: 5em; ">
+            <h2 class="page-title text-center">Our Team</h2>
+            <div class="team-list">
+
+                <team-member name="John Doe" avatar="avatar-john.png" role="Travel Consultant"
+                    linkedin="https://www.linkedin.com/"></team-member>
+
+                <team-member avatar="avatar-jane.png" name="Jane Smith" role="Marketing Specialist"
+                    linkedin="https://www.linkedin.com/"></team-member>
+
+                <team-member avatar="avatar-emily.png" name="Emily Johnson" role="Customer Support"
+                    linkedin="https://www.linkedin.com/"></team-member>
+
+
+            </div>
+        </section>
+    </travel-app>
+
+    <script type="module">
+        import TravelApp from "./assets/js/app.js";
+        customElements.define("travel-app", TravelApp);
+    </script>
+
+
+</body>
+
+</html>

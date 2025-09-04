@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMax - Contact Us</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home-page">
+    <div class="background-overlay">
+        <img src="/assets/images/background.png" />
+        <div class="gradient-overlay" style="background-color: rgba(0, 0, 0, 0.651);"></div>
+    </div>
+
+
+    <travel-app module="/assets/js/pages/contact.page.js" active-nav="contact" hide-searchbar
+        container-class="container w-full flex flex-col justify-center item-center">
+        <section class="page-info" style="margin: 0 auto;">
+            <h1 class="page-title">Contact Us</h1>
+        </section>
+        <section class="contact-form-section w-full">
+            <form id="contact-form" class="w-full flex flex-col gap-6">
+                <div class="form-group">
+                    <label for="name" class="font-medium">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="font-medium">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        placeholder="Enter your message here"></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+        <div id="contact-dialog" class="dialog">
+            <form class="dialog-content">
+                <div class="flex flex-col gap-2">
+                    <h3 class="dialog-title">
+                        Thank you for contacting us!
+                    </h3>
+
+                    <p class="dialog-message">We appreciate your feedback and will get back to you shortly.</p>
+
+                </div>
+                <button id="close-dialog" class="button secondary dialog-button" type="button">
+                    Close
+                </button>
+            </form>
+        </div>
+    </travel-app>
+
+    <script type="module">
+        import TravelApp from "/assets/js/app.js";
+        customElements.define("travel-app", TravelApp);
+    </script>
+</body>
+
+</html>
