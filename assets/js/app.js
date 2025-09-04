@@ -44,7 +44,6 @@ const linkedNames = {
  */
 export default class TravelApp extends HTMLElement {
   baseUrl = "https://zenozaga.github.io/heath_census";
-  observedAttributes = ["module", "active-nav", "hide-search"];
   containerProps = {};
 
   constructor() {
@@ -58,7 +57,7 @@ export default class TravelApp extends HTMLElement {
     }
 
     this.activeNav = this.attributes?.["active-nav"]?.value || "home";
-    this.hideSearch = this.attributes?.["hide-searchbar"]?.value === "true";
+    this.hideSearchBar = this.attributes?.["hide-searchbar"]?.value === "true";
 
     this.module = this.attributes.module?.value;
   }
@@ -128,10 +127,10 @@ export default class TravelApp extends HTMLElement {
         }),
 
         // empty searchbar
-        this.hideSearch && element("div", { class: "search-wrapper" }),
+        this.hideSearchBar && element("div", { class: "search-wrapper" }),
 
         // search bar
-        !this.hideSearch &&
+        !this.hideSearchBar &&
           element("form", {
             class: "search-wrapper flex justify-center items-center",
             childrens: [

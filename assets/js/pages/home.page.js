@@ -138,19 +138,17 @@ export function recommendationCard(
         <div/>
     `;
 
-  article.querySelector("button").addEventListener("click", function(){
-    
-    if(article.classList.contains("expanded")){
+  article.querySelector("button").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    if (article.classList.contains("expanded")) {
       article.classList.remove("expanded");
       this.textContent = "View Details";
-    }else{
+    } else {
       this.textContent = "Hide Details";
       article.classList.add("expanded");
     }
-
   });
-
-
 
   return article;
 }
