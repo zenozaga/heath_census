@@ -4,6 +4,9 @@ TravelMax is a demo project developed as part of a **Coursera course assignment*
 The goal is to practice building a simple **contact form** for a travel agency and  
 show a personalized thank-you message after submission.
 
+## Demo
+Check out the live demo [here](https://zenozaga.github.io/heath_census/).
+
 ## About the project
 - Built with **HTML, CSS, and JavaScript**.  
 - Includes a contact form where users can enter their **name** and **email**.  
