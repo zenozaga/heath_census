@@ -43,6 +43,7 @@ const linkedNames = {
  *
  */
 export default class TravelApp extends HTMLElement {
+  baseUrl = "https://zenozaga.github.io/heath_census";
   observedAttributes = ["module", "active-nav", "hide-search"];
   containerProps = {};
 
@@ -194,7 +195,7 @@ export default class TravelApp extends HTMLElement {
                   target: "_blank",
                   childrens: [
                     element("img", {
-                      src: "./assets/icons/twitter.svg",
+                      src: `${this.baseUrl}/assets/icons/twitter.svg`,
                       class: "social-icon twitter",
                     }),
                   ],
@@ -204,7 +205,7 @@ export default class TravelApp extends HTMLElement {
                   target: "_blank",
                   childrens: [
                     element("img", {
-                      src: "./assets/icons/facebook.svg",
+                      src: `${this.baseUrl}/assets/icons/facebook.svg`,
                       class: "social-icon facebook",
                     }),
                   ],
@@ -214,7 +215,7 @@ export default class TravelApp extends HTMLElement {
                   target: "_blank",
                   childrens: [
                     element("img", {
-                      src: "./assets/icons/instagram.svg",
+                      src: `${this.baseUrl}/assets/icons/instagram.svg`,
                       class: "social-icon instagram",
                     }),
                   ],
@@ -224,7 +225,7 @@ export default class TravelApp extends HTMLElement {
                   target: "_blank",
                   childrens: [
                     element("img", {
-                      src: "./assets/icons/youtube.svg",
+                      src: `${this.baseUrl}/assets/icons/youtube.svg`,
                       class: "social-icon youtube",
                     }),
                   ],
