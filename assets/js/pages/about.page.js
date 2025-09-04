@@ -27,7 +27,7 @@ class TeamMember extends HTMLElement {
 
           <div class="team-member-social flex items-center gap-4">
              <a href="${this.linkedin}" target="_blank" class="flex items-center justify-center">
-              <img src="/assets/icons/linkedin.svg" />
+              <img src="./assets/icons/linkedin.svg" />
             </a>
           </div>
       </div>
