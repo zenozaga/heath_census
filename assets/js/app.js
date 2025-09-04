@@ -12,17 +12,17 @@
 const navs = [
   {
     id: "home",
-    href: "/index.html",
+    href: "./index.html",
     title: "Home",
   },
   {
     id: "about",
-    href: "/about.html",
+    href: "./about.html",
     title: "About Us",
   },
   {
     id: "contact",
-    href: "/contact.html",
+    href: "./contact.html",
     title: "Contact Us",
   },
 ];
@@ -247,7 +247,7 @@ export default class TravelApp extends HTMLElement {
 
     this.appendChild(app);
     this.onReady();
-    if (this.module) this.loadModule(this.module);
+    if (this.module) this.loadModule(`${this.baseUrl}/assets/js/pages/${this.module}`);
   }
 
   onReady() {

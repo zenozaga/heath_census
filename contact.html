@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-    <base href="https://zenozaga.github.io/heath_census/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelMax - Contact Us</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,12 +14,12 @@
 
 <body class="home-page">
     <div class="background-overlay">
-        <img src="/assets/images/background.png" />
+        <img src="./assets/images/background.png" />
         <div class="gradient-overlay" style="background-color: rgba(0, 0, 0, 0.651);"></div>
     </div>
 
 
-    <travel-app module="/assets/js/pages/contact.page.js" active-nav="contact" hide-searchbar
+    <travel-app module="contact.page.js" active-nav="contact" hide-searchbar
         container-class="container w-full flex flex-col justify-center item-center">
         <section class="page-info" style="margin: 0 auto;">
             <h1 class="page-title">Contact Us</h1>
@@ -61,7 +60,7 @@
     </travel-app>
 
     <script type="module">
-        import TravelApp from "/assets/js/app.js";
+        import TravelApp from "./assets/js/app.js";
         customElements.define("travel-app", TravelApp);
     </script>
 </body>
