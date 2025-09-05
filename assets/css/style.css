@@ -737,7 +737,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  gap: 10em;
+  gap: 10%;
   position: fixed;
   padding-top: var(--nav-height);
   padding-bottom: var(--nav-height);
