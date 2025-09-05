@@ -741,6 +741,7 @@ p {
   position: fixed;
   padding-top: var(--nav-height);
   padding-bottom: var(--nav-height);
+  box-sizing: border-box;
 }
 
 .social-wrapper .social-line {
